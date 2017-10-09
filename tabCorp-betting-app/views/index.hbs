@@ -1,0 +1,14 @@
+<h3>Please place your bets below!</h3>
+<p>The format of bets is Bet:product:selections:stake.<br>
+The last line of bet represents result in format is Result:first:second:third.</p>
+
+{{#if error}}
+  <p style="color:red;">{{error.message}}</p>
+{{/if}}
+
+<form action="/submitBet" method="post">
+  <label for="bets">Enter your bets here:</label>
+  <textarea name='bet' rows="10"></textarea>
+  <br><br>
+  <button type="submit">Submit</button>
+</form>
