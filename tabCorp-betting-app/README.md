@@ -1,4 +1,4 @@
-# tote-betting
+#TabCorp tote-betting
 
 Tote-betting is a betting application written in nodejs. 
 Tote betting involves punters choosing the outcome of a race by placing bets into a pool of money. Punters who successfully predict the outcome of a race take a share of the pool proportional to their stake.
@@ -21,17 +21,18 @@ Dividends are calculated based on the following rules-
 3. The remaining total is split, proportionally to stake, amongst punters who chose the correct first and second horse in correct order
 
 ##Input Format
-<product> is one of W,P,E
-<selection> is either a single runner number (e.g. 4) for Win and Place, or two runner numbers (e.g.
+Bet:\<product\>:\<selections\>:\<stake\> 
+\<product\> is one of W,P,E
+\<selection\> is either a single runner number (e.g. 4) for Win and Place, or two runner numbers (e.g.
 4,3) for Exacta
-<stake> is an amount in whole dollars (e.g. 35)
+\<stake\> is an amount in whole dollars (e.g. 35)
 
 ##Result Format
-Result:<first>:<second>:<third>
+Result:\<first\>:\<second\>:\<third\>
 
 ##Output Format
-<product>:<winningSelections>:<dividend>
-The output against a specific product is not displayed if the dividend is 0
+\<product\>:\<winningSelections\>:\<dividend\>
+The output against a specific product is not displayed if the dividend is 0.
 
 ## Intalling and Running the Application:
 Please follow the below steps- 
